@@ -11,7 +11,7 @@ public class Exercise3 {
 
         // Get all numbers in the ReactiveSources.intNumbersFlux stream
         // into a List and print the list and its size
-        // toList method is unsupported in JDK 11
+        // toList chain method is unsupported in JDK 11
         System.out.println(ReactiveSources.intNumbersFlux().toStream().collect(Collectors.toList()));
 
         System.out.println("Press a key to end");
